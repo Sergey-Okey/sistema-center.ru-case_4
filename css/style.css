@@ -504,6 +504,7 @@ article h1 {
 	background: url(/assect/img/main/back-lenta.png) no-repeat;
 	background-size: cover;
 	height: 600px;
+	margin: 100px 0;
 }
 
 .lenta-content {
