@@ -73,20 +73,3 @@ document.querySelector('a[href="#lenta-info"]').addEventListener('click', functi
 	});
 });
 
-
-const container = document.querySelector('.product-slider');
-
-container.addEventListener('mousemove', (event) => {
-	// Получаем текущее положение курсора мыши относительно контейнера
-	const mouseX = event.pageX - container.offsetLeft;
-
-	// Получаем текущую ширину контейнера
-	const containerWidth = container.offsetWidth;
-
-	// Рассчитываем положение прокрутки в процентах
-	const scrollPosition = (mouseX / containerWidth) * 200;
-
-	// Применяем прокрутку к контейнеру
-	container.scrollLeft = (container.scrollWidth - containerWidth) * (scrollPosition / 200);
-
-});
