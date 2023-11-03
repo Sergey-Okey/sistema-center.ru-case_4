@@ -65,6 +65,33 @@ slides.forEach(slide => {
 
 showSlide(currentSlide);
 timer = setInterval(nextSlide, 8000);
+document.querySelector('a[href="#slider-team"]').addEventListener('click', function (e) {
+	e.preventDefault(); // Отменить переход по ссылке по умолчанию
+
+	document.querySelector('#slider-team').scrollIntoView({
+		behavior: 'smooth' // Добавить плавность при прокрутке
+	});
+});
+showSlide(currentSlide);
+timer = setInterval(nextSlide, 8000);
+document.querySelector('a[href="#abouts"]').addEventListener('click', function (e) {
+	e.preventDefault(); // Отменить переход по ссылке по умолчанию
+
+	document.querySelector('#abouts').scrollIntoView({
+		behavior: 'smooth' // Добавить плавность при прокрутке
+	});
+});
+showSlide(currentSlide);
+timer = setInterval(nextSlide, 8000);
+document.querySelector('a[href="#product-list"]').addEventListener('click', function (e) {
+	e.preventDefault(); // Отменить переход по ссылке по умолчанию
+
+	document.querySelector('#product-list').scrollIntoView({
+		behavior: 'smooth' // Добавить плавность при прокрутке
+	});
+});
+showSlide(currentSlide);
+timer = setInterval(nextSlide, 8000);
 document.querySelector('a[href="#lenta-info"]').addEventListener('click', function (e) {
 	e.preventDefault(); // Отменить переход по ссылке по умолчанию
 
