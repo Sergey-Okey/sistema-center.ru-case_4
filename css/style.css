@@ -502,7 +502,7 @@ article h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url(/assect/img/main/back-lenta.png) no-repeat;
+	background: url(assect/img/main/back-lenta.png) no-repeat;
 	background-size: cover;
 	height: 600px;
 	margin: 100px 0;
