@@ -733,3 +733,7 @@ footer {
 	font-size: 16px;
 	font-weight: 500;
 }
+
+*[id] {
+	scroll-margin-top: 50vh;
+}
