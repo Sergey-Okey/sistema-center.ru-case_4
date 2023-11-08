@@ -1,0 +1,58 @@
+@import '/css/colors.css';
+
+.hero {
+	margin-top: 100px;
+
+	.hero__content {
+		display: flex;
+		gap: 20px;
+	}
+
+	.hero__content_title h1 {
+		width: 800px;
+		margin-top: 150px;
+		font-weight: 600;
+		font-size: 70px;
+		color: #313940;
+	}
+
+	.hero__content_video {
+		position: relative;
+		overflow: hidden;
+		background: var(--white-color);
+		border-radius: 30px;
+		border-color: transparent;
+		border-style: solid;
+		width: 500px;
+		height: 750px;
+		padding: 10px;
+	}
+
+	.hero__content_video img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	.hero__content_title {
+		display: flex;
+		flex-direction: column;
+		background: var(--white-color);
+		border-radius: 30px;
+		border-color: transparent;
+		border-style: solid;
+		width: 1000px;
+		height: 670px;
+		padding: 50px;
+
+	}
+
+	.hero__content_title span {
+		width: 500px;
+		color: #313940;
+		font-size: 30px;
+		font-weight: 500;
+		margin-top: 30px;
+	}
+}

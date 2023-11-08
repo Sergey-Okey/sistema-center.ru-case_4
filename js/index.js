@@ -14,27 +14,7 @@ function showSlide(n) {
 
 	slides[n].classList.add('active');
 	dots[n].classList.add('active');
-	slides[n].style.animation = 'slideInLeft 2s forwards';
-}
-
-function nextSlide() {
-	if (!isMouseOverSlide) {
-		currentSlide++;
-		if (currentSlide >= slides.length) {
-			currentSlide = 0;
-		}
-		showSlide(currentSlide);
-	}
-}
-
-function prevSlide() {
-	if (!isMouseOverSlide) {
-		currentSlide--;
-		if (currentSlide < 0) {
-			currentSlide = slides.length - 1;
-		}
-		showSlide(currentSlide);
-	}
+	slides[n].style.animation = 'slideInLeft 3s forwards';
 }
 
 function activateDot(n) {
@@ -99,4 +79,3 @@ document.querySelector('a[href="#lenta-info"]').addEventListener('click', functi
 		behavior: 'smooth' // Добавить плавность при прокрутке
 	});
 });
-
