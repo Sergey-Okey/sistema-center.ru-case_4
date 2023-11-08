@@ -203,4 +203,5 @@
 	background: var(--background-color);
 	color: var(--var-color);
 	font-weight: 600;
+	transition: 0.5s;
 }
