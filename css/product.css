@@ -1,0 +1,105 @@
+@import '/css/colors.css';
+
+.product {
+	margin-top: 150px;
+}
+
+.content__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 50px;
+	row-gap: 50px;
+}
+
+.content_item {
+	position: relative;
+	width: 400px;
+	height: 300px;
+	background: var(--var-color);
+	border-radius: 50px;
+	border: 2px solid var(--inactive-color);
+	box-shadow: 0px 5px 5px 0px rgba(83, 83, 83, 0.63);
+	transition: 0.5s;
+}
+
+.item_content {
+	position: relative;
+}
+
+.content-after-1::after{
+	position: absolute;
+	content:'Светофоры';
+	width: 400px;
+	height: 300px;
+	z-index: 2;
+	background:unset;
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 800;
+	line-height: 600%;
+	color: var(--white-color);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.content-after-1:hover::after{
+opacity: 1;
+}
+
+.item_content button {
+	position: absolute;
+	padding: 10px;
+	background-color: var(--white-color);
+	box-shadow: 0px 0px 5px 0px rgba(83, 83, 83, 0.63);
+	border: 0;
+	border-top-right-radius: 50px;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	left: 20px;
+	bottom: 20px;
+	z-index: 3;
+}
+
+.item_content button:hover {
+	box-shadow: none;
+	background-color: var(--var-color);
+	border: 0;
+	transition: 0.5s;
+}
+
+.item_content button:hover a {
+	color: var(--white-color);
+}
+
+.item_content:nth-child(1) button {
+	border-bottom-left-radius: 50px;
+}
+
+.item_content button a {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--black-color);
+}
+
+.item_content img {
+	position: relative;
+	width: 400px;
+	height: 300px;
+	border-radius: 50px;
+	border: 0;
+}
+.product__content h1{
+	margin: 50px 0;
+	font-size: 40px;
+	font-weight: 600;
+	text-align: center;
+}
