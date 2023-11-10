@@ -1,6 +1,8 @@
 .product {
-	margin-top: 150px;
+	display: flex;
+	margin-top: 100px;
 	width: 100%;
+	justify-content: center;
 }
 
 .content__grid {
