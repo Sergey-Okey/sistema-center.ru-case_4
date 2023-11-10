@@ -1,7 +1,6 @@
-@import '/css/colors.css';
-
 .product {
 	margin-top: 150px;
+	width: 100%;
 }
 
 .content__grid {
