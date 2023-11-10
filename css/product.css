@@ -19,7 +19,7 @@
 	background: var(--var-color);
 	border-radius: 50px;
 	border: 2px solid var(--inactive-color);
-	box-shadow: 0px 5px 5px 0px rgba(83, 83, 83, 0.63);
+	box-shadow: 0px 0px 5px 0px rgba(83, 83, 83, 0.63);
 	transition: 0.5s;
 }
 
@@ -27,13 +27,15 @@
 	position: relative;
 }
 
-.content-after-1::after{
+/*--------- After -------*/
+
+.content-after-1::after {
 	position: absolute;
-	content:'Светофоры';
+	content: 'Светофоры';
 	width: 400px;
 	height: 300px;
 	z-index: 2;
-	background:unset;
+	background: unset;
 	backdrop-filter: blur(5px);
 	border-radius: 50px;
 	bottom: 0;
@@ -50,9 +52,201 @@
 	cursor: pointer;
 }
 
-.content-after-1:hover::after{
-opacity: 1;
+.content-after-1:hover::after {
+	opacity: 1;
 }
+
+.content-after-2::after {
+	position: absolute;
+	content: 'освещение';
+	width: 400px;
+	height: 300px;
+	z-index: 2;
+	background: unset;
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	opacity: 0;
+
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 800;
+	line-height: 600%;
+	text-align: center;
+	color: var(--white-color);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.content-after-2:hover::after {
+	opacity: 1;
+}
+
+.content-after-3::after {
+	position: absolute;
+	content: 'панели';
+	width: 400px;
+	height: 300px;
+	z-index: 2;
+	background: unset;
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 800;
+	line-height: 600%;
+	color: var(--white-color);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.content-after-3:hover::after {
+	opacity: 1;
+}
+
+.content-after-4::after {
+	position: absolute;
+	content: 'свет';
+	width: 400px;
+	height: 300px;
+	z-index: 2;
+	background: unset;
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 800;
+	line-height: 600%;
+	color: var(--white-color);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.content-after-4:hover::after {
+	opacity: 1;
+}
+
+.content-after-5::after {
+	position: absolute;
+	content: 'блоки';
+	width: 400px;
+	height: 300px;
+	z-index: 2;
+	background: unset;
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 800;
+	line-height: 600%;
+	color: var(--white-color);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.content-after-5:hover::after {
+	opacity: 1;
+}
+
+.content-after-6::after {
+	position: absolute;
+	content: 'окно';
+	width: 400px;
+	height: 300px;
+	z-index: 2;
+	background: unset;
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 800;
+	line-height: 600%;
+	color: var(--white-color);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.content-after-6:hover::after {
+	opacity: 1;
+}
+
+.content-after-7::after {
+	position: absolute;
+	content: 'знаки';
+	width: 400px;
+	height: 300px;
+	z-index: 2;
+	background: unset;
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 800;
+	line-height: 600%;
+	color: var(--white-color);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.content-after-7:hover::after {
+	opacity: 1;
+}
+
+.content-after-8::after {
+	position: absolute;
+	content: 'схемы';
+	width: 400px;
+	height: 300px;
+	z-index: 2;
+	background: unset;
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 800;
+	line-height: 600%;
+	color: var(--white-color);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.content-after-8:hover::after {
+	opacity: 1;
+}
+
+/*------------------------------*/
 
 .item_content button {
 	position: absolute;
@@ -97,7 +291,8 @@ opacity: 1;
 	border-radius: 50px;
 	border: 0;
 }
-.product__content h1{
+
+.product__content h1 {
 	margin: 50px 0;
 	font-size: 40px;
 	font-weight: 600;
