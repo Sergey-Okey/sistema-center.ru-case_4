@@ -10,10 +10,10 @@
 
 	.hero__content_title h1 {
 		width: 800px;
-		margin-top: 150px;
+		margin-top: 0px;
 		font-weight: 600;
 		font-size: 70px;
-		color: #313940;
+		color: var(--black-color-);
 	}
 
 	.hero__content_video {
@@ -49,11 +49,12 @@
 	}
 
 	.hero__content_title span {
-		width: 500px;
+		width: 800px;
 		color: #313940;
-		font-size: 30px;
+		font-size: 25px;
 		font-weight: 500;
 		margin-top: 30px;
+		line-height: 160%;
 	}
 }
 
@@ -164,21 +165,23 @@
 
 .curcle__content_title {
 	display: flex;
+	width: 800px;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 200px;
+	justify-content: center;
 }
 
 .curcle__content_title h2 {
 	font-size: 70px;
-	font-weight: 500;
-	color: #313940;
+	font-weight: 600;
+	color: var(--black-color-);
 }
 
 .curcle__content_title span {
-	width: 600px;
+
 	margin: 30px;
-	font-size: 28px;
+	font-size: 22px;
 	color: #313940;
 	line-height: 180%;
 	font-weight: 500;

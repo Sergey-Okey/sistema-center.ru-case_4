@@ -58,7 +58,7 @@
 	align-items: center;
 	border-radius: 50px;
 	transition: 0.9s;
-	text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+	text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.979);
 }
 
 /*------------------------------*/
