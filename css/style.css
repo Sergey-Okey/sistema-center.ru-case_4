@@ -552,6 +552,22 @@ article h1 {
 	background-color: var(--var-color);
 }
 
+
+.button-back {
+	border: 0;
+	background: var(--var-color);
+	border-radius: 10px;
+	transform: rotate(180deg);
+	position: absolute;
+	top: 50px;
+	left: 350px;
+}
+
+.button-back:hover {
+	box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.411);
+	transition: 0.5s;
+}
+
 .lenta-button a {
 	color: var(--white-color);
 	font-size: 2rem;
@@ -709,6 +725,26 @@ footer {
 	display: flex;
 	flex-direction: column;
 	padding: 30px;
+}
+
+#map {
+	margin-top: 150px;
+}
+
+#map h2 {
+	font-size: 3rem;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+iframe {
+	width: 100%;
+	height: 600px;
+	border: 0;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px 0px rgba(83, 83, 83, 0.144);
 }
 
 .number {
