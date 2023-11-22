@@ -47,6 +47,8 @@ header {
 
 header a {
 	color: var(--black-color);
+	font-weight: 600;
+	font-size: 20px;
 }
 
 header img {
@@ -62,6 +64,7 @@ header img {
 	margin-right: 3rem;
 	font-weight: 900;
 }
+
 
 /* Main */
 
@@ -379,7 +382,10 @@ nav .active {
 	}
 }
 
-
+.img-article {
+	width: 400px;
+	height: 350px;
+}
 
 /* Section Abouts */
 
@@ -477,7 +483,6 @@ nav .active {
 .img-article {
 	background-color: var(--white-color);
 	border-radius: 50px;
-	padding: 40px;
 	float: right;
 }
 
