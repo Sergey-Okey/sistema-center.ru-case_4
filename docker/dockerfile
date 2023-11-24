@@ -1,0 +1,6 @@
+FROM nginx
+COPY /home/crack8/www/Case_1 .
+WORKDIR /home/crack8/www/Case_1
+
+
+
