@@ -52,6 +52,7 @@ document.querySelector('a[href="#slider-team"]').addEventListener('click', funct
 		behavior: 'smooth' // Добавить плавность при прокрутке
 	});
 });
+
 showSlide(currentSlide);
 timer = setInterval(nextSlide, 8000);
 document.querySelector('a[href="#abouts"]').addEventListener('click', function (e) {
@@ -61,6 +62,7 @@ document.querySelector('a[href="#abouts"]').addEventListener('click', function (
 		behavior: 'smooth' // Добавить плавность при прокрутке
 	});
 });
+
 showSlide(currentSlide);
 timer = setInterval(nextSlide, 8000);
 document.querySelector('a[href="#product-list"]').addEventListener('click', function (e) {
@@ -70,6 +72,7 @@ document.querySelector('a[href="#product-list"]').addEventListener('click', func
 		behavior: 'smooth' // Добавить плавность при прокрутке
 	});
 });
+
 showSlide(currentSlide);
 timer = setInterval(nextSlide, 8000);
 document.querySelector('a[href="#lenta-info"]').addEventListener('click', function (e) {
