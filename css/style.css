@@ -72,11 +72,11 @@ header img {
 	padding-top: 10rem;
 	background: var(--background-color);
 	width: 100%;
-	height: 665px;
+	height: 750px;
 }
 
 .slide h1 {
-	font-size: 3rem;
+	font-size: 4rem;
 	line-height: 86px;
 	color: var(--var-color);
 	font-weight: 600;
@@ -92,8 +92,8 @@ header img {
 	margin-left: 5rem;
 	opacity: 0;
 	transition: 2s;
-	-webkit-animation: show 3s 1;
-	animation: show 3s 1;
+	-webkit-animation: show 3s 4;
+	animation: show 2s 1;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
@@ -120,18 +120,19 @@ header img {
 
 .slide-content span {
 	line-height: 100px;
-	font-size: 5rem;
+	font-size: 5.5rem;
 	font-weight: 800;
 	z-index: 2;
 	margin-left: 70px;
 	z-index: 2;
 	cursor: pointer;
 	list-style-type: none;
+	width: 90%;
 }
 
 .slide-content span a {
-	color: var(--white-color);
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	color: var(--black-color);
+	
 }
 
 .slide {
@@ -169,15 +170,31 @@ header img {
 	position: absolute;
 	overflow: hidden;
 	width: 70%;
-	height: 500px;
-	top: 15%;
+	height: 350px;
+	top: 70%;
+	left: 100px;
 	z-index: 1;
-	border-radius: 100px;
+	border-radius: 80px;
+	animation: roll-in 3s ease both;
+	
 }
 
 .slide-img img {
 	width: 100%;
+    transform: translate(-15);
+	
 }
+@keyframes roll-in {
+	0% {
+	  transform: translateX(0%);
+	}
+	50%{
+		transform: translateX(100%)
+	}
+	100% {
+	  transform: translateX(0%);
+	}
+  }
 
 
 .active {
@@ -186,20 +203,20 @@ header img {
 
 .navigation {
 	position: absolute;
-	top: 50%;
-	left: 0;
+	top: 40%;
+	left: -40px;
 	gap: 3rem;
-	transform: translateY(-50%);
 	display: flex;
 	flex-direction: column;
-	margin-left: 30px;
-	border-radius: 30px;
+	transition: 0.9s;
+    transform: translate(150%);
+	transition-delay: 2s;
 }
 
 .dot {
 	width: 30px;
 	height: 30px;
-	border-radius: 50px;
+	border-radius: 30px;
 	cursor: pointer;
 	background-color: var(--var-color);
 	transition: .3s;
