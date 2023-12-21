@@ -389,74 +389,22 @@ nav .active {
   height: 350px;
 }
 
-/* Section Abouts */
+/* Article Product*/
 
-.abouts h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  text-align: center;
-  margin-top: 4rem;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.abouts-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 20px;
-  row-gap: 20px;
-  width: 80%;
-  height: 600px;
-  margin: 100px 0;
-}
-
-.abouts .container {
+.product {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
-
-.abouts .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: #2397e4;
-  border-radius: 30px;
-}
-
-.abouts .item-3 {
-  grid-column: 1 / span 2;
-  display: flex;
-}
-
-.abouts .item-3 div {
-  width: 70%;
-}
-
-.abouts p {
-  width: 90%;
-  background-color: var(--var-color);
-  font-size: 1.5rem;
-  border-radius: 10px;
-  padding: 20px;
-  color: var(--white-color);
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.473);
-  font-weight: 600;
-}
-
-/* Article */
 
 .article-content {
-  margin-top: 5%;
+  margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 10%;
-  margin: 5% 0;
+  margin: 50px 0;
 }
 
 .article-text span {
@@ -492,6 +440,13 @@ nav .active {
   width: 12%;
 }
 
+.product-list h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin:100px 0;
+}
+
 .article-text ul {
   display: flex;
   flex-direction: column;
@@ -518,7 +473,6 @@ article h1 {
   align-items: center;
   background: url(../assect/img/main/back-lenta.jpg) no-repeat;
   background-size: cover;
-  height: 600px;
   margin: 100px 0;
 }
 
@@ -532,6 +486,7 @@ article h1 {
   background-color: rgba(0, 0, 0, 0.178);
   backdrop-filter: blur(10px);
   color: var(--white-color);
+  margin: 50px 0;
 }
 
 .lenta-content h1 {
@@ -591,6 +546,7 @@ article h1 {
   align-items: center;
   margin-bottom: 100px;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .slider-team-item {
@@ -674,6 +630,7 @@ footer {
   justify-content: space-between;
   margin-bottom: 100px;
   padding: 0 200px;
+  flex-wrap: wrap;
 }
 
 .footer-name h1 {
