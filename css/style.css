@@ -34,7 +34,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 31px;
+  height: 35px;
   color: var(--black-color);
   background-color: var(--background-color);
   padding: 20px;
@@ -67,14 +67,14 @@ header img {
 
 .slider {
   display: flex;
-  padding-top: 10rem;
+  padding-top: 150px;
   background: var(--background-color);
   width: 100%;
-  height: 750px;
+  height: 800px;
 }
 
 .slide h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 86px;
   color: var(--var-color);
   font-weight: 600;
@@ -118,7 +118,7 @@ header img {
 
 .slide-content span {
   line-height: 100px;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   font-weight: 800;
   z-index: 2;
   margin-left: 70px;

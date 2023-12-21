@@ -1,124 +1,126 @@
 .product {
-	position: relative;
-	display: flex;
-	margin-top: 50px;
-	width: 100vw;
-	justify-content: center;
+  position: relative;
+  display: flex;
+  margin-top: 50px;
+  width: 100vw;
+  justify-content: center;
 }
 
 .content__grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	gap: 100px;
-	row-gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 100px;
+  row-gap: 100px;
+  grid-auto-rows: 200px; /* Высота строк */
+  grid-auto-flow: row; /* Указывает, что новые элементы будут переходить на новую строку */
 }
 
+
 .content_item {
-	position: relative;
-	width: 400px;
-	height: 300px;
-	background: var(--var-color);
-	border-radius: 30px;
-	border: 1px solid var(--inactive-color);
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background: var(--var-color);
+  border-radius: 30px;
+  border: 1px solid var(--inactive-color);
 }
 
 .item_content {
-	position: relative;
+  position: relative;
 }
 
 /*--------- After -------*/
 .after-block {
-	display: flex;
-	position: absolute;
-	background: unset;
-	width: 400px;
-	height: 300px;
-	backdrop-filter: blur(5px);
-	border-radius: 30px;
-	top: 0;
-	bottom: 0;
-	justify-content: center;
-	opacity: 0;
+  display: flex;
+  position: absolute;
+  background: unset;
+  width: 400px;
+  height: 300px;
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  opacity: 0;
 }
 
 .content_item:hover .after-block {
-	opacity: 1;
-	transition: 0.5s;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .after-block span {
-	display: flex;
-	color: var(--white-color);
-	font-size: 35px;
-	line-height: 120%;
-	text-align: center;
-	font-weight: 800;
-	text-transform: uppercase;
-	align-items: center;
-	border-radius: 30px;
-	transition: 0.9s;
-	text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.979);
+  display: flex;
+  color: var(--white-color);
+  font-size: 35px;
+  line-height: 120%;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  align-items: center;
+  border-radius: 30px;
+  transition: 0.9s;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.979);
 }
 
 /*------------------------------*/
 
 .item_content button {
-	position: absolute;
-	padding: 10px;
-	background-color: var(--white-color);
-	box-shadow: 0px 0px 5px 0px rgba(83, 83, 83, 0.63);
-	border: 0;
-	border-top-right-radius: 50px;
-	width: 150px;
-	height: 40px;
-	cursor: pointer;
-	left: 20px;
-	bottom: 20px;
-	z-index: 3;
+  position: absolute;
+  padding: 10px;
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 5px 0px rgba(83, 83, 83, 0.63);
+  border: 0;
+  border-top-right-radius: 50px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  left: 20px;
+  bottom: 20px;
+  z-index: 3;
 }
 
 .item_content button:hover {
-	box-shadow: none;
-	background-color: var(--var-color);
-	border: 0;
-	transition: 0.5s;
+  box-shadow: none;
+  background-color: var(--var-color);
+  border: 0;
+  transition: 0.5s;
 }
 
 .item_content button:hover a {
-	color: var(--white-color);
+  color: var(--white-color);
 }
 
 .item_content:nth-child(1) button {
-	border-bottom-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .item_content button a {
-	font-size: 16px;
-	font-weight: 600;
-	color: var(--black-color);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black-color);
 }
 
 .item_content img {
-	position: relative;
-	width: 400px;
-	height: 300px;
-	border-radius: 30px;
-	border: 0;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  border: 0;
 }
 
 .product__content h1 {
-	margin: 100px 0;
-	font-size: 3rem;
-	font-weight: 800;
-	text-align: center;
-	width: 800px;
-
+  margin: 100px 0;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  width: 800px;
 }
 
 .product__content {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
