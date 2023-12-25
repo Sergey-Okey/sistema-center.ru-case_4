@@ -16,7 +16,7 @@ function showSlide(n) {
   // Добавление класса 'active' и применение анимации к указанному слайду
   slides[n].classList.add('active');
   dots[n].classList.add('active');
-  slides[n].style.animation = 'slideInLeft 3s forwards';
+  slides[n].style.animation = 'slideInLeft 1s forwards';
 }
 
 // Функция активации конкретной точки

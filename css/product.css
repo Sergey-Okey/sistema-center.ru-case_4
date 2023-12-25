@@ -9,13 +9,18 @@
 .content__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 100px;
-  row-gap: 100px;
+  grid-template-rows: repeat(3, 1fr);
+
+  gap: 50px;
+  row-gap: 50px;
   grid-auto-rows: 200px; /* Высота строк */
   grid-auto-flow: row; /* Указывает, что новые элементы будут переходить на новую строку */
 }
 
+.content-after-7 {
+  grid-column: span 3; /* Объединение по горизонтали на три колонки */
+  justify-self: center; /* Центрирование по горизонтали */
+}
 
 .content_item {
   position: relative;
@@ -24,6 +29,16 @@
   background: var(--var-color);
   border-radius: 30px;
   border: 1px solid var(--inactive-color);
+  h2 {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.979);
+    margin: 20px;
+    width: 90%;
+  }
 }
 
 .item_content {
@@ -48,6 +63,12 @@
 .content_item:hover .after-block {
   opacity: 1;
   transition: 0.5s;
+}
+
+.content_item:hover{
+  h2{
+    display: none;
+  }
 }
 
 .after-block span {
