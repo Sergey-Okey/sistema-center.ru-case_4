@@ -769,7 +769,7 @@ body {
 	/* цвет фона бара */
 }
 
-// Active link
+/*Active link*/
 .menu-link.active {
 	color: #0086f3;
 }
