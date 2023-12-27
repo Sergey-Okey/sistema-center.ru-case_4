@@ -743,3 +743,33 @@ iframe {
 *[id] {
 	scroll-margin-top: 50vh;
 }
+
+body {
+	scrollbar-width: none;
+	/* для Firefox */
+	-ms-overflow-style: none;
+	/* для IE 11 */
+}
+
+/* Устанавливаем цвет бара скролла */
+::-webkit-scrollbar {
+	width: 10px;
+	/* ширина бара */
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #0982e5;
+	/* цвет бара */
+	border-radius: 30px;
+	/* скругление углов бара */
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+	/* цвет фона бара */
+}
+
+// Active link
+.menu-link.active {
+	color: #0086f3;
+}
