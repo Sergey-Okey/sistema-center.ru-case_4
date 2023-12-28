@@ -180,9 +180,9 @@ header img {
 }
 
 .slide-img img {
-	display: flex;
-	width: 100%;
 	position: relative;
+	width: 100%;
+	top: -200px;
 }
 
 @keyframes roll-in {
