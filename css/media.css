@@ -1,5 +1,24 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+	body {
+		width: 100%;
+	}
+
 	.container {
 		width: 90%;
+	}
+
+	header {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.slider {
+		width: 100%;
+	}
+
+	.content__grid {
+		display: grid;
+		
 	}
 }
