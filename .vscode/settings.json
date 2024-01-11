@@ -5,12 +5,15 @@
 	"window.closeWhenEmpty": false,
 	"explorer.compactFolders": true,
 	"editor.minimap.autohide": true,
-	"workbench.activityBar.location": "top",
+	"workbench.activityBar.location": "side",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.sideBar.location": "left",
 	"workbench.tree.expandMode": "singleClick",
 	"workbench.tree.renderIndentGuides": "onHover",
 	"breadcrumbs.icons": true,
 	"breadcrumbs.filePath": "on",
-	"breadcrumbs.enabled": false
+	"breadcrumbs.enabled": false,
+	"files.autoSave": "afterDelay",
+	"editor.cursorStyle": "line",
+	"gitHistory.showEditorTitleMenuBarIcons": true
 }
