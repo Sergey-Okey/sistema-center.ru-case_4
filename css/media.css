@@ -1,55 +1,68 @@
 @media only screen and (max-width: 767px) {
 	body {
-		width: 100%;
+		width: 100;
+		overflow-x: hidden;
 	}
 
 	.container {
-		width: 90%;
+		width: 95%;
 	}
 
 	header {
-		display: flex;
-		flex-wrap: wrap;
 		width: 100%;
+		display: block;
+	}
+
+	.header-nomber a {
+		text-wrap: nowrap;
+	}
+
+	.logo span {
+		font-size: 1.5rem;
+		margin: 0;
+	}
+
+	.nav {
+		display: none;
 	}
 
 	nav ul div a {
 		text-wrap: nowrap;
 	}
 
-	nav {
-		display: none;
-	}
-
 	.slider {
-		width: 100%;
 		height: 600px;
 	}
 
+	.slide {
+		width: 100%;
+	}
+
 	.slide-content {
+		width: 100%;
 		margin: 0;
 	}
 
 	.slide-content h1 {
 		margin: 0;
-		text-align: center;
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 
 	.slide-content span {
-		font-size: 2rem;
+		font-size: 2.5rem;
+		line-height: 100%;
+		margin: 0;
 	}
 
 	.slide-img {
 		left: 0;
-		width: 100%;
+		width: 95%;
 		height: 80%;
 		border-radius: 30px;
 	}
 
 	.slide-img img {
 		top: 0;
-
 	}
 
 	.block-text {
@@ -61,4 +74,60 @@
 		top: 85%;
 	}
 
+	.article-text ol {
+		text-wrap: nowrap;
+	}
+
+	.product-list h1 {
+		margin: 20px 0;
+	}
+
+	.lenta-info {
+
+		margin: 0;
+		padding: 0;
+	}
+
+	.lenta-content h1 {
+		font-size: 1.5rem;
+	}
+
+	.lenta-content {
+		width: 90%;
+		padding: 10px;
+		margin: 20px auto;
+	}
+
+	#lenta-info {
+		width: 100%;
+		text-align: center;
+	}
+
+	.lenta-button {
+		justify-content: center;
+		width: 100%;
+		border-radius: 50px;
+	}
+
+	.footer-content {
+		justify-content: center;
+	}
+
+	.footer-navigation {
+		display: none;
+	}
+
+	.protection-content {
+		flex-direction: column;
+	}
+
+	.number {
+		font-size: 2rem;
+
+	}
+
+	.footer-info {
+		margin-top: 20px;
+		align-items: center;
+	}
 }

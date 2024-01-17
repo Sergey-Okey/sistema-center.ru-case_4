@@ -13,7 +13,18 @@
 	row-gap: 50px;
 }
 
-.content-after-7 {}
+
+@media only screen and (max-width: 767px) {
+	.content__grid {
+		grid-template-columns: auto;
+	}
+
+	.product__content h1 {
+		font-size: 1rem;
+		margin: 0;
+	}
+}
+
 
 .content_item {
 	position: relative;
@@ -130,7 +141,6 @@
 	font-size: 3rem;
 	font-weight: 800;
 	text-align: center;
-	width: 800px;
 }
 
 .product__content {
