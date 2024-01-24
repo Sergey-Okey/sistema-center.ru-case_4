@@ -70,10 +70,8 @@
 	transition: 0.5s;
 }
 
-.content_item:hover {
-	h2 {
-		display: none;
-	}
+.content_item:hover h2 {
+	display: none;
 }
 
 .after-block span {
