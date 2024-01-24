@@ -791,5 +791,15 @@ body {
 
 #iframeContainer {
 	display: none;
-padding-top: 50px;
+	padding-top: 50px;
+	box-shadow: 0;
+}
+
+#iframeContainer iframe {
+	border: none;
+	/* Убираем рамку */
+	box-shadow: none;
+	/* Убираем тень */
+	border-radius: 0;
+	/* Убираем закругленные края */
 }
