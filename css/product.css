@@ -116,11 +116,21 @@
 	color: var(--white-color);
 }
 
+.item_content button:hover {
+	color: var(--white-color);
+}
+
 .item_content:nth-child(1) button {
 	border-bottom-left-radius: 50px;
 }
 
 .item_content button a {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--black-color);
+}
+
+.item_content button {
 	font-size: 16px;
 	font-weight: 600;
 	color: var(--black-color);

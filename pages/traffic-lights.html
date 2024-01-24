@@ -37,47 +37,48 @@
 				</div>
 			</ul>
 		</nav>
-		<!---------------------------------------------------------------------------------------------------->
 		<section class="product">
 			<div class="product__content">
 				<h1>Светофоры</h1>
 				<div class="content__grid">
 					<div class="content_item">
 						<div class="item_content">
-							<h2>Светофоры секционные</h2>
+							<h2>Светофоры секционные-объёмные</h2>
 							<span></span>
-							<img src="../assect/img/product/foto.jpg" alt="">
-							<button><a href="../pages/traffic-lights.html">Подробнее</a></button>
+							<img src="../assect/img/product/secions.jpg" alt="">
+							<button onclick="showIframe()">Подробнее</button>
 						</div>
-						<div class="after-block"><span>Светофоры секционные</span></div>
+						<div class="after-block"><span>Светофоры секционные-объёмные</span></div>
 					</div>
 					<div class="content_item ">
 						<div class="item_content">
 							<h2>Светофоры ультратонкие</h2>
 							<span></span>
-							<img src="../assect/img/product/foto.jpg" alt="">
-							<button><a href="">Подробнее</a></button>
+							<img src="../assect/img/product/tonk.jpg" alt="">
+							<button onclick="showIframe()">Подробнее</button>
 						</div>
 						<div class="after-block"><span>Светофоры ультратонкие</span></div>
 					</div>
 					<div class="content_item ">
 						<div class="item_content">
-							<h2>Светофоры секционные-объёмные</h2>
+							<h2>Светофоры секционные</h2>
 							<span></span>
-							<img src="../assect/img/product/foto.jpg" alt="">
-							<button><a href="">Подробнее</a></button>
+							<img src="../assect/img/product/sctions.jpeg" alt="">
+							<button onclick="showIframe()">Подробнее</button>
 						</div>
-						<div class="after-block"><span>Светофоры секционные-объёмные</span></div>
+						<div class="after-block"><span>Светофоры секционные</span></div>
 					</div>
-
 				</div>
 			</div>
 		</section>
 
+		<div id="iframeContainer">
+			<iframe src="../pages/items/items-traffic-ights.html"></iframe>
+		</div>
 	</main>
 	<!---------------------------------------------------------------------------------------------------->
 	<footer>
-		<div class="container">
+		<div class=" container">
 			<div class="footer-content">
 				<div class="footer-name">
 					<h1>Система Центр</h1>
@@ -112,9 +113,19 @@
 		</div>
 	</footer>
 
-	<script src="js/index.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script>
+		function showIframe() {
+			// Получаем ссылку на контейнер с iframe
+			var iframeContainer = document.getElementById("iframeContainer");
+
+			// Переключаем видимость контейнера
+			if (iframeContainer.style.display === "none") {
+				iframeContainer.style.display = "block";
+			} else {
+				iframeContainer.style.display = "none";
+			}
+		}
+	</script>
 </body>
 
 </html>

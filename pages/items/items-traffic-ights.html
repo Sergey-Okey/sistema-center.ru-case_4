@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/product.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="/css/colors.css">
+	<link rel="stylesheet" href="/css/traffic-lights.css">
+	<link rel="stylesheet" href="/css/items-traffic.css">
+	<title>Светофоры</title>
+</head>
+
+<body>
+	<section class="info-item">
+		<div class="container">
+			<div class="slidery">
+				<img class="active" src="https://source.unsplash.com/gKk9rpyDryU">
+				<img src="https://source.unsplash.com/VFGEhLznjPU">
+				<img src="https://source.unsplash.com/InR-EhiO_js">
+			</div>
+			<nav class="slider-nav">
+				<button class="previous">
+					<span>
+						&#171;
+					</span>
+				</button>
+				<button class="next">
+					<span>
+						&#187;
+					</span>
+				</button>
+			</nav>
+		</div>
+		<div class="info-container">
+			<h1>Далеко-далеко за словесными горами.</h1>
+			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рукописи буквоград,
+				ipsum снова осталось пор своих великий свой! Текстов.</p>
+		</div>
+	</section>
+	</main>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const previousButton = document.querySelector(".previous");
+			const nextButton = document.querySelector(".next");
+			const images = document.querySelectorAll(".slidery img");
+			let currentIndex = 0;
+
+			function showImage(index) {
+				images.forEach((img, i) => {
+					img.classList.toggle("active", i === index);
+				});
+			}
+
+			function showNextImage() {
+				currentIndex = (currentIndex + 1) % images.length;
+				showImage(currentIndex);
+			}
+
+			function showPreviousImage() {
+				currentIndex = (currentIndex - 1 + images.length) % images.length;
+				showImage(currentIndex);
+			}
+
+			nextButton.addEventListener("click", showNextImage);
+			previousButton.addEventListener("click", showPreviousImage);
+		});
+	</script>
+</body>
+
+</html>
