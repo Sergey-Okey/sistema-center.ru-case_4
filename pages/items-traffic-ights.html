@@ -15,29 +15,67 @@
 
 <body>
 	<section class="info-item">
-		<div class="container">
-			<div class="slidery">
-				<img class="active" src="https://source.unsplash.com/gKk9rpyDryU">
-				<img src="https://source.unsplash.com/VFGEhLznjPU">
-				<img src="https://source.unsplash.com/InR-EhiO_js">
+		<div class="content">
+			<div class="container">
+				<div class="slidery">
+					<img class="active" src="https://source.unsplash.com/gKk9rpyDryU">
+					<img src="https://source.unsplash.com/VFGEhLznjPU">
+					<img src="https://source.unsplash.com/InR-EhiO_js">
+				</div>
+				<nav class="slider-nav">
+					<button class="previous">
+						<span>
+							&#171;
+						</span>
+					</button>
+					<button class="next">
+						<span>
+							&#187;
+						</span>
+					</button>
+				</nav>
 			</div>
-			<nav class="slider-nav">
-				<button class="previous">
-					<span>
-						&#171;
-					</span>
-				</button>
-				<button class="next">
-					<span>
-						&#187;
-					</span>
-				</button>
-			</nav>
-		</div>
-		<div class="info-container">
-			<h1>Далеко-далеко за словесными горами.</h1>
-			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рукописи буквоград,
-				ipsum снова осталось пор своих великий свой! Текстов.</p>
+			<div class="wrapper">
+				<div class="info-container">
+					<h1>Далеко-далеко за словесными горами.</h1>
+					<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рукописи буквоград,
+						ipsum снова осталось пор своих великий свой! Текстов.</p>
+				</div>
+				<div class="options">
+					<ul>
+						<li class="folder" onclick="toggleFolder(this)">Полка 1
+							<ul class="nested">
+								<li>Описание полки 1.1</li>
+								<li>Описание полки 1.2</li>
+							</ul>
+						</li>
+						<li class="folder" onclick="toggleFolder(this)">Полка 2
+							<ul class="nested">
+								<li>Описание полки 2.1</li>
+								<li>Описание полки 2.2</li>
+							</ul>
+						</li>
+						<li class="folder" onclick="toggleFolder(this)">Полка 3
+							<ul class="nested">
+								<li>Описание полки 3.1</li>
+								<li>Описание полки 3.2</li>
+							</ul>
+						</li>
+						<li class="folder" onclick="toggleFolder(this)">Полка 4
+							<ul class="nested">
+								<li>Описание полки 4.1</li>
+								<li>Описание полки 4.2</li>
+							</ul>
+						</li>
+						<li class="folder" onclick="toggleFolder(this)">Полка 5
+							<ul class="nested">
+								<li>Описание полки 5.1</li>
+								<li>Описание полки 5.2</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 	</main>
@@ -67,6 +105,12 @@
 			nextButton.addEventListener("click", showNextImage);
 			previousButton.addEventListener("click", showPreviousImage);
 		});
+	</script>
+	<script>
+		function toggleFolder(element) {
+			var nestedList = element.querySelector('.nested');
+			nestedList.style.display = (nestedList.style.display === 'none') ? 'block' : 'none';
+		}
 	</script>
 </body>
 
