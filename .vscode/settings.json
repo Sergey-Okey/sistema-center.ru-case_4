@@ -6,7 +6,7 @@
 	"explorer.compactFolders": true,
 	"editor.minimap.autohide": true,
 	"workbench.activityBar.location": "side",
-	"workbench.iconTheme": "material-icon-theme",
+	"workbench.iconTheme": "icons",
 	"workbench.sideBar.location": "left",
 	"workbench.tree.expandMode": "singleClick",
 	"workbench.tree.renderIndentGuides": "onHover",
